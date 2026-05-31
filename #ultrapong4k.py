@@ -65,6 +65,9 @@ class Ball:
 
         self.sync_rect()
 
+    def draw(self, surf):
+        pygame.draw.rect(surf, COL_BALL, self.rect)
+
 
 class Pong:
     def __init__(self):
